@@ -1,30 +1,4 @@
 #Requires -Version 5
-<#
-    .SYNOPSIS
-    Main entry point for Kubernetes Load Testing
-
-    .DESCRIPTION
-    Create a cluster or use an existing one to run a load test, then dispose all resources.
-
-    .NOTES
-    Can be run locally with Kubernetes installed or against Azure Kubernetes Service (AKS)
-
-    .PARAMETER Mode
-    Specifies the mode for the script. Default value: All
-
-    .PARAMETER Environment
-    Specifies the configuration file to use. Default value: DEBUG
-
-    .INPUTS
-    None. You cannot pipe objects to Invoke-K8sTests.
-
-    .EXAMPLE
-    PS> .\Invoke-K8sTests.ps1 -Mode "All" -Environment "DEBUG"
-    PS> .\Invoke-K8sTests.ps1 -Mode "Create" -Environment "TEST"
-    PS> .\Invoke-K8sTests.ps1 -Mode "Run" -Environment "TEST"
-    PS> .\Invoke-K8sTests.ps1 -Mode "Dispose" -Environment "TEST"
-#>
-
 [CmdletBinding()]
 Param (
     [Parameter ( Mandatory = $False, Position = 0, ValueFromPipelineByPropertyName = $True )]

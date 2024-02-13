@@ -1,12 +1,3 @@
-<# 
-PSScriptInfo 
-.VERSION 1.0 
-.AUTHOR Clément Joye 
-.COMPANYNAME ADACA Authority AB 
-.COPYRIGHT (C) 2020 Clément Joye / ADACA Authority AB - All Rights Reserved 
-.LICENSEURI https://github.com/clement-joye/Kubernetes-Load-Testing/blob/main/LICENSE 
-.PROJECTURI https://github.com/clement-joye/Kubernetes-Load-Testing
-#>
 #Requires -Version 5
 <#
     .SYNOPSIS

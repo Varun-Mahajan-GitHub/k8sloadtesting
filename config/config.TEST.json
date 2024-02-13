@@ -1,8 +1,8 @@
 {
     "cluster":
     {
-        "resourceGroup": "your-resource-group",
-        "name": "your-cluster-name",
+        "resourceGroup": "chipmunk",
+        "name": "chipmunkcluster",
         "nodeCount": 5,
         "vmSize": "Standard_DS2_v2",
         "wait": false,
@@ -10,7 +10,7 @@
     },
     "template": 
     {
-        "image": "your-docker-image",
+        "image": "clementjoye/locust-bs4",
         "replicas": 30,
         "download-resources": true
     },
@@ -18,7 +18,7 @@
     {
         "master": true,
         "headless": true,
-        "host": "https://your-base-url",
+        "host": "https://drm-staging.saavn.com",
         "expect-workers": 30,
         "users": 1000,
         "spawn-rate": 1,
@@ -31,7 +31,7 @@
     {
         "worker": true,
         "headless": true,
-        "host": "https://your-base-url"
+        "host": "https://drm-staging.saavn.com"
     },
     "script": "../locust-scripts/simple/locustfile.py"
 }

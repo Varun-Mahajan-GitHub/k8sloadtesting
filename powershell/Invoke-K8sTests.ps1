@@ -1,5 +1,4 @@
 #Requires -Version 5
-[CmdletBinding()]
 Param (
     [Parameter ( Mandatory = $False, Position = 0, ValueFromPipelineByPropertyName = $True )]
     [String] $Mode = "All",
